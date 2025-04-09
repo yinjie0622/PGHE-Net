@@ -138,7 +138,7 @@ class PGHE(nn.Module):
         res1 = self.Encoder[0](x_)
         z = self.feat_extract[1](res1)
         z = self.FAM2(z, z2)
-        res2, _ = self.Encoder[1](z)
+        res2 = self.Encoder[1](z)
         z = self.feat_extract[2](res2)
         z = self.FAM1(z, z4)
         z = self.Encoder[2](z)
