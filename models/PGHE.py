@@ -72,10 +72,10 @@ class FAM(nn.Module):
 
 
 class PGHE(nn.Module):
-    def __init__(self, num_res=8):
+    def __init__(self, num_res=16):
         super(PGHE, self).__init__()
 
-        base_channel = 24
+        base_channel = 32
 
         self.Encoder = nn.ModuleList([
             EBlock(base_channel, num_res),
