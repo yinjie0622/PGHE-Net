@@ -21,7 +21,7 @@ einops                    0.8.0
 For those who wish to perform rapid training on their custom datasets, we provide a straightforward training code in the train.py file, enabling training of our MABDT. Please refer to the example usage within the file to train the model on your datasets.
 
 ```python
-python main.py --data_dir ./datasets_name/ --mode train --batch_size 8 --learning_rate 1e-4 --numepoch 1000 --num_worker 1 --valid_freq 10
+python main.py --data_dir ./datasets_name/ --mode train --batch_size 8 --learning_rate 1e-4 --nume_poch 1000 --num_worker 1 --valid_freq 10
 ```
 
 ### Test command
