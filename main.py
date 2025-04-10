@@ -36,25 +36,25 @@ if __name__ == '__main__':
     # Directories
     parser.add_argument('--model_name', default='PGHE', type=str)
     parser.add_argument('--data_dir', type=str,
-                        default='F:/dataset_GRS/RICE2/')
+                        default='./datasets/')
     parser.add_argument('--mode', default='train',
                         choices=['train', 'test'], type=str)
 
     # Train
-    parser.add_argument('--batch_size', type=int, default=1)
+    parser.add_argument('--batch_size', type=int, default=8)
     parser.add_argument('--learning_rate', type=float, default=1e-4)
     parser.add_argument('--weight_decay', type=float, default=0)
     parser.add_argument('--num_epoch', type=int, default=1000)
-    parser.add_argument('--print_freq', type=int, default=51300)
+    parser.add_argument('--print_freq', type=int, default=10)
     parser.add_argument('--num_worker', type=int, default=1)
-    parser.add_argument('--save_freq', type=int, default=10000)
-    parser.add_argument('--valid_freq', type=int, default=1)
+    parser.add_argument('--save_freq', type=int, default=10)
+    parser.add_argument('--valid_freq', type=int, default=10)
     parser.add_argument(
         '--resume', type=str, default='')
 
     # Test
     parser.add_argument('--test_model', type=str,
-                        default='C:/Users/pt/Desktop/CharIR2/results/PGHE/ots/Best.pkl')
+                        default='./results/PGHE/ots/Best.pkl')
     parser.add_argument('--save_image', type=bool,
                         default=True, choices=[True, False])
 
