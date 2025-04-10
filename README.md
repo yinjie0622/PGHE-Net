@@ -34,4 +34,4 @@ python main.py --data_dir ./datasets_name/ --mode test --test_model ./results/PG
 
 ### Contact us
 
-If I have any inquiries or questions regarding our work, please feel free to contact us at yinjie13@stu.cdut.edu.cn.
+If you have any inquiries or questions regarding our work, please feel free to contact us at yinjie13@stu.cdut.edu.cn.
